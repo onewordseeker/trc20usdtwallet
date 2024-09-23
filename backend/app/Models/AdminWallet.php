@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class AdminWallet extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'wallet_address',
+        'private_key',
+        'created_at',
+        'updated_at'
+    ];
+  protected $hidden = [
+      	'private_key'
+    ];
+
+}
